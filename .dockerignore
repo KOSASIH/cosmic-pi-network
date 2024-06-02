@@ -1,0 +1,28 @@
+# Node modules
+node_modules
+**/node_modules
+
+# Parcel cache
+.parcel-cache
+
+# OS
+.DS_Store
+
+# Git
+.git
+
+# Other files
+*.log
+*.tmp
+*.temp
+*.old
+*.orig
+*.rej
+*.swp
+*.bak
+*.pyc
+*.class
+
+# Directories
+__pycache__/
+*.egg-info/
