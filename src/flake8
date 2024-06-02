@@ -1,0 +1,23 @@
+[flake8]
+max-line-length = 120
+ignore = E501
+exclude =
+    .git,
+    __pycache__,
+    venv,
+    .vscode,
+    .idea
+
+[formatting]
+max-complexity = 10
+
+[import-order]
+application-imports = .*
+third-party-imports = .*
+standard-imports = .*
+
+[logging]
+log-level = WARNING
+
+[misc]
+max-doc-length = 80
