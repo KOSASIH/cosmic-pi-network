@@ -1,23 +1,23 @@
-pub struct NeuralNetwork {
-    num_inputs: usize,
-    num_hidden: usize,
-    num_outputs: usize,
-    weights: Vec<f64>,
+use ndarray::prelude::*;
+use rand::distributions::Uniform;
+use rand::prelude::*;
+
+pub struct DeepNeuralNetwork {
+    pub layers: Vec<usize>,
+    pub learning_rate: f32,
 }
 
-impl NeuralNetwork {
-    pub fn new(num_inputs: usize, num_hidden: usize, num_outputs: usize) -> Self {
-        // Initialize the neural network
-        unimplemented!()
+impl DeepNeuralNetwork {
+    pub fn new(layers: Vec<usize>, learning_rate: f32) -> Self {
+        Self { layers, learning_rate }
     }
 
-    pub fn train_stdp(&mut self, training_data: &mut [f64]) {
-        // Train the network using STDP
-        unimplemented!()
-    }
-
-    pub fn run(&self, input: &[f64]) -> Vec<f64> {
-        // Run the network on the input
-        unimplemented!()
+    pub fn initialize_weights(&self) -> Vec<Array2<f32>> {
+        let mut weights = Vec::new();
+        for i in 0..self.layers.len() - 1 {
+            let weight = Array2::random((self.layers[i], self.layers[i + 1]), Uniform::new(-1.0, 1.0));
+            weights.push(weight);
+        }
+        weights
     }
 }
