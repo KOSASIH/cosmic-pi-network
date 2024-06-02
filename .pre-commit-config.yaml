@@ -1,0 +1,31 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: pretty-format-json
+      - id: sort-json
+      - id: check-ast
+      - id: check-merge-conflict
+      - id: check-merge-conflict-markers
+      - id: debug-statements
+      - id: mixed-line-ending
+      - id: requirements-txt-fixer
+      - id: requirements-txt-sorter
+      - id: sort-simple-imports
+      - id: sort-imports
+      - id: fix-encoding-pragma
+      - id: fix-me
+      - id: no-commit-to-branch
+      - id: no-merge-conflict
+      - id: no-push-to-branch
+      - id: no-utf-bom
+      - id: pyupgrade
+      - id: reorder-python-imports
+      - id: requirements-txt
+      - id: sort-imports
+      - id: trailing-comma
+      - id: validate-quote-types
