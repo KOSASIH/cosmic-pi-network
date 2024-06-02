@@ -63,27 +63,6 @@ Learning resources:
 [Artificial Neural Networks Series]: https://rubikscode.net/2018/02/19/artificial-neural-networks-series/
 [Welch Labs]: https://www.youtube.com/watch?v=bxe2T-V8XRs&list=PLiaHhY2iBX9hdHaRr6b7XevZtgZRa1PoU
 [supporting Github]: https://github.com/stephencwelch/Neural-Networks-Demystified
-Sign up
-Sign in
-Sign up
-Sign in
-Member-only story
-Ashish Sharda
-Follow
---
-Share
-Welcome back to our series on building a neural network in Rust! In Part 1, we discussed the basics of neural networks and set up our Rust environment. Now, it’s time to dive deeper and build the foundational components of our neural network: neurons, layers, and activation functions. By the end of this part, you’ll have a solid understanding of these components and how they interact to form a neural network.
---
---
-Help
-Status
-About
-Careers
-Press
-Blog
-Privacy
-Terms
-Text to speech
-Teams
+
 
 =====================
