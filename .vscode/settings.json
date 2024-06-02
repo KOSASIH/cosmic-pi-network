@@ -1,0 +1,662 @@
+{
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue"
+    ],
+    "python.pythonPath": "venv/bin/python",
+    "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E501"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.nosetestsArgs": [
+        "--with-coverage",
+        "--cover-package=my_package"
+    ],
+    "python.testing.pytestArgs": [
+        "-v",
+        "--cov=my_package"
+    ],
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "editor.wordBasedSuggestions": true,
+    "editor.quickSuggestions": {
+        "strings": true,
+        "comments": true,
+        "other": true
+    },
+    "editor.suggest.showUnits": true,
+    "editor.suggest.showColors": true,
+    "editor.suggest.showKeywords": true,
+    "editor.suggest.showOperators": true,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showDeprecated": true,
+    "editor.suggest.showDocumentation": true,
+    "editor.suggest.localityBonus": true,
+    "editor.suggest.maxVisibleSuggestions": 10,
+    "editor.suggest.snippetSuggestions": "top",
+    "editor.suggest.filteredTypes": [
+        "variable",
+        "constant",
+        "function",
+        "method",
+        "unit",
+        "value",
+        "object",
+        "type",
+        "interface",
+        "struct",
+        "class",
+        "enum",
+        "module",
+        "property",
+        "event",
+        "operator",
+        "keyword",
+        "snippet"
+    ],
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": true,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.size": "fill",
+    "editor.minimap.viewPosition": 0,
+    "editor.minimap.maxColumn": 120,
+    "editor.minimap.side": "right",
+    "editor.minimap.scrollbarSize": 8,
+    "editor.minimap.useLayerHinting": true,
+    "editor.minimap.showFolderOpenMarkers": true,
+    "editor.minimap.showRefs": true,
+    "editor.minimap.showSelectionHighlights": true,
+    "editor.minimap.showActiveLine": true,
+    "editor.minimap.renderWhitespace": "all",
+    "editor.minimap.renderControlCharacters": true,
+    "editor.minimap.semiTransparent": false,
+    "editor.minimap.transparency": 0.5,
+    "editor.minimap.background": "#00000000",
+    "editor.minimap.selectionHighlight": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.findMatchHighlight": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.selectionHighlightBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.findMatchHighlightBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showSymbolHighlights": true,
+    "editor.minimap.symbolHighlight": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.symbolHighlightBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showCodeLens": true,
+    "editor.minimap.codeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.codeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showReferencesCodeLens": true,
+    "editor.minimap.referencesCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.referencesCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showInlayHints": true,
+    "editor.minimap.inlayHints": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.inlayHintsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showParameterHints": true,
+    "editor.minimap.parameterHints": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.parameterHintsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showSignatureHints": true,
+    "editor.minimap.signatureHints": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.signatureHintsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showTypeHints": true,
+    "editor.minimap.typeHints": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.typeHintsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showFoldingRanges": true,
+    "editor.minimap.foldingRanges": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.foldingRangesBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showFoldingMarkers": true,
+    "editor.minimap.foldingMarkers": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.foldingMarkersBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showCodeActions": true,
+    "editor.minimap.codeActions": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.codeActionsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showDiagnostics": true,
+    "editor.minimap.diagnostics": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.diagnosticsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showInlayHintsCodeActions": true,
+    "editor.minimap.inlayHintsCodeActions": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.inlayHintsCodeActionsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showParameterHintsCodeActions": true,
+    "editor.minimap.parameterHintsCodeActions": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.parameterHintsCodeActionsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showSignatureHintsCodeActions": true,
+    "editor.minimap.signatureHintsCodeActions": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.signatureHintsCodeActionsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showTypeHintsCodeActions": true,
+    "editor.minimap.typeHintsCodeActions": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.typeHintsCodeActionsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showFoldingRangesCodeActions": true,
+    "editor.minimap.foldingRangesCodeActions": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.foldingRangesCodeActionsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showFoldingMarkersCodeActions": true,
+    "editor.minimap.foldingMarkersCodeActions": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.foldingMarkersCodeActionsBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showCodeActionsCodeLens": true,
+    "editor.minimap.codeActionsCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.codeActionsCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showDiagnosticsCodeLens": true,
+    "editor.minimap.diagnosticsCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.diagnosticsCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showInlayHintsCodeLens": true,
+    "editor.minimap.inlayHintsCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.inlayHintsCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showParameterHintsCodeLens": true,
+    "editor.minimap.parameterHintsCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.parameterHintsCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showSignatureHintsCodeLens": true,
+    "editor.minimap.signatureHintsCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.signatureHintsCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showTypeHintsCodeLens": true,
+    "editor.minimap.typeHintsCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.typeHintsCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showFoldingRangesCodeLens": true,
+    "editor.minimap.foldingRangesCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.foldingRangesCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    },
+    "editor.minimap.showFoldingMarkersCodeLens": true,
+    "editor.minimap.foldingMarkersCodeLens": {
+        "active": {
+            "background": "#ff0000"
+        },
+        "inactive": {
+            "background": "#ff0000"
+        }
+    },
+    "editor.minimap.foldingMarkersCodeLensBorder": {
+        "active": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        },
+        "inactive": {
+            "style": "solid",
+            "width": 1,
+            "color": "#ff0000"
+        }
+    }
+}
