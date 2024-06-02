@@ -1,12 +1,12 @@
-//! Main Function
-
-use neuromorphic_lib::NeuromorphicLib;
+use neuromorphic_lib::neural_network::DeepNeuralNetwork;
+use neuromorphic_lib::stdp::STDP;
 
 fn main() {
-    let mut lib = NeuromorphicLib::new();
-    let inputs = vec![1.0, 2.0, 3.0];
-    let targets = vec![4.0, 5.0, 6.0];
-    lib.train(&inputs, &targets);
-    let outputs = lib.run(&inputs);
-    println!("Outputs: {:?}", outputs);
+    let neural_network = DeepNeuralNetwork::new(vec![784, 256, 10], 0.01);
+    let stdp = STDP::new(0.01, 20.0);
+
+    let mut weights = neural_network.initialize_weights();
+
+    // Train the network
+    // ...
 }
