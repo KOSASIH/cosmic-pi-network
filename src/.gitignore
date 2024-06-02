@@ -1,0 +1,14 @@
+# Ignore virtual environment files
+venv/
+*.pyc
+*.egg-info/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore data files
+data/
