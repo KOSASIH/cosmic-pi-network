@@ -1,32 +1,40 @@
-from cosmic_pi_network.cosmic_network import CosmicPiNetwork
-from cosmic_pi_network.data_processing import clean_data, preprocess_data
-from cosmic_pi_network.data_analysis import analyze_data
-from cosmic_pi_network.models import train_model, evaluate_model
-from cosmic_pi_network.visualization import plot_results
-from cosmic_pi_network.config import COSMIC_PI_IP, COSMIC_PI_PORT
+from cosmic_pi_network.api import API
+from cosmic_pi_network.computer_vision import ComputerVision
+from cosmic_pi_network.data_preprocessing import DataPreprocessing
+from cosmic_pi_network.neural_network import NeuralNetwork
+from cosmic_pi_network.nlp import NLP
 
-# Initialize the network object
-network = CosmicPiNetwork(ip=COSMIC_PI_IP, port=COSMIC_PI_PORT)
+def main():
+    api = API()
+    weather_data = api.get_weather("New York")
+    print("Weather data:", weather_data)
 
-# Connect to the network
-network.connect()
+    nlp = NLP()
+    text = "This is a sample text."
+    tokens = nlp.tokenize_text(text)
+    filtered_tokens = nlp.remove_stopwords(tokens)
+    lemmatized_tokens = nlp.lemmatize_tokens(filtered_tokens)
+    sentiment = nlp.sentiment_analysis(text)
+    print("Sentiment:", sentiment)
 
-# Receive raw data from the network
-raw_data = network.receive_data()
+    computer_vision = ComputerVision()
+    image = computer_vision.load_image("image.jpg")
+    grayscale_image = computer_vision.convert_to_grayscale(image)
+    thresh_image = computer_vision.apply_threshold(grayscale_image)
+    edges_image = computer_vision.detect_edges(grayscale_image)
+    faces = computer_vision.detect_faces(grayscale_image)
+    print("Number offaces detected:", len(faces))
 
-# Clean and preprocess the data
-cleaned_data = clean_data(raw_data)
-preprocessed_data = preprocess_data(cleaned_data)
+    data_preprocessing = DataPreprocessing()
+    data = data_preprocessing.load_data("data.csv")
+    X_train, X_test, y_train, y_test = data_preprocessing.split_data(data)
+    X_train_scaled, X_test_scaled = data_preprocessing.scale_data(X_train, X_test)
 
-# Analyze the data
-analysis_results = analyze_data(preprocessed_data)
+    neural_network = NeuralNetwork()
+    model = neural_network.create_model((28, 28, 1), 10)
+    neural_network.train_model(model, X_train_scaled, y_train)
+    loss, accuracy = neural_network.evaluate_model(model, X_test_scaled, y_test)
+    print("Loss:", loss, "Accuracy:", accuracy)
 
-# Train and evaluate the model
-model = train_model(analysis_results)
-model_accuracy = evaluate_model(model, analysis_results)
-
-# Visualize the results
-plot_results(analysis_results)
-
-# Disconnect from the network
-network.disconnect()
+if __name__ == "__main__":
+    main()
