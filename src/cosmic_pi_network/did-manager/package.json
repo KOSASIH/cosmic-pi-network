@@ -1,0 +1,11 @@
+{
+  "name": "did-manager",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.3.5"
+  }
+}
