@@ -7,6 +7,7 @@ from cosmic_pi_network.quantum_computing import QuantumCircuit
 from cosmic_pi_network.artificial_intelligence import AIAgent
 from cosmic_pi_network.cryptography import Crypto
 from cosmic_pi_network.machine_learning import ReinforcementLearning
+from cosmic_pi_network.blockchain import Blockchain
 
 def main():
     api = API()
@@ -70,6 +71,11 @@ def main():
     model = reinforcement_learning.train_agent(model, env)
     rewards = reinforcement_learning.evaluate_agent(model, env)
     print("Rewards:", rewards)
+
+    blockchain = Blockchain()
+    transactions = [{"from": "Alice", "to": "Bob", "amount": 10}, {"from": "Bob", "to": "Alice", "amount": 5}]
+    block, block_hash = blockchain.create_block(transactions, "0")
+    print("Block hash:", block_hash)
 
 if __name__ == "__main__":
     main()
